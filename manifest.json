@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "QuickSave",
+  "description": "Point & Click saving images directly to a specified directory",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "QuickSave",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
