@@ -4,14 +4,37 @@
   "name": "QuickSave",
   "description": "Point & Click saving images directly to a specified directory",
   "version": "1.0",
-
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "./icon.png",
     "default_title": "QuickSave",
-    "default_popup": "popup.html"
+    "default_popup": "./popup.html"
   },
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "https://ajax.googleapis.com/",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "commands": {
+    "mute-Tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M",
+        "mac": "Command+Shift+M"
+      },
+      "description": "Saves all images on page"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M",
+        "mac": "Command+Shift+M"
+      }
+    }
+  }
 }
