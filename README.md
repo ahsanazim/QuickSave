@@ -1,12 +1,13 @@
-## QuickSave
+## chromeUtil
 
 A chrome extension!
 
-Specify a directory, and from then on, all images you click on will
-save to said directory
-
-
+Currently supports keybindings for:
+- Muting / un-muting current tab (Cmd-Shift-M)
 
 
 TODO:
-change the logo
+- change the logo
+- Mute / un-mute all other tabs (Command+Shift+L)
+- pin / unpin current tab (Command+Shift+P)
+- Close all other abs (Command+Shift+K)

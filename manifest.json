@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "QuickSave",
-  "description": "Point & Click saving images directly to a specified directory",
+  "name": "chromeUtil",
+  "description": "fancy keybindings for currently unsupported tasks",
   "version": "1.0",
   "background": {
     "scripts": [
@@ -12,7 +12,7 @@
   },
   "browser_action": {
     "default_icon": "./icon.png",
-    "default_title": "QuickSave",
+    "default_title": "chromeUtil",
     "default_popup": "./popup.html"
   },
   "permissions": [
@@ -23,18 +23,33 @@
     "https://*/*"
   ],
   "commands": {
-    "mute-Tabs": {
+    "mute-this-tab": {
       "suggested_key": {
         "default": "Ctrl+Shift+M",
         "mac": "Command+Shift+M"
       },
-      "description": "Saves all images on page"
+      "description": "mute current tab"
     },
-    "_execute_browser_action": {
+    "mute-other-tabs": {
       "suggested_key": {
-        "default": "Ctrl+Shift+M",
-        "mac": "Command+Shift+M"
-      }
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "mute all other tabs"
+    },
+    "pin-this-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "pin this tab"
+    },
+    "close-other-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "close all other tabs"
     }
   }
 }
